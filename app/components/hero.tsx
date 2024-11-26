@@ -1,5 +1,12 @@
 import PioneeringSvg from '@/public/images/hero/PIONEERING.svg'
 import CommunityDrivenVenturesSvg from '@/public/images/hero/COMMUNITY-DRIVEN_VENTURES.svg'
+import { Crimson_Text } from 'next/font/google'
+
+const crimsonText = Crimson_Text({ 
+  weight: ['400', '600'],
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export function Hero() {
   return (
@@ -108,6 +115,15 @@ export function Hero() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Updated text section */}
+      <div className="absolute bottom-32 left-0 right-0 text-center">
+        <p className={`text-[#0000FF] text-3xl leading-snug max-w-4xl mx-auto font-regular ${crimsonText.className}`}>
+          A community-driven platform for proposing, funding,
+          <br />
+          and developing projects using a credit-based system with AMMs.
+        </p>
       </div>
     </section>
   )
