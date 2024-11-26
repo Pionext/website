@@ -1,39 +1,22 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export function Navigation() {
   return (
-    <nav className="fixed w-full top-0 z-50 backdrop-blur-md bg-[#0000FF]/20 supports-[backdrop-filter]:bg-[#0000FF]/20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
-          <div className="flex">
-            <div className="flex-shrink-0 flex items-center gap-2">
-              <img 
-                src="/images/pionext_logoicon.svg" 
-                alt="Pionext Icon" 
-                className="h-8 w-8"
-              />
-              <img 
-                src="/images/pionext_logotype.svg" 
-                alt="Pionext" 
-                className="h-6"
-              />
-            </div>
-            <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-              <Link 
-                href="#features" 
-                className="border-transparent text-white/80 hover:text-white hover:border-white/50 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors"
-              >
-                Features
-              </Link>
-              <Link 
-                href="#how-it-works" 
-                className="border-transparent text-white/80 hover:text-white hover:border-white/50 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors"
-              >
-                How It Works
-              </Link>
-            </div>
-          </div>
+    <nav className="fixed top-0 left-0 right-0 z-50">
+      <div className="container mx-auto px-8 py-6 flex justify-between items-center">
+        <div>
+          <Image 
+            src="/images/pionext_logotype.svg"
+            alt="PIONEXT"
+            width={145}
+            height={26}
+            priority
+          />
         </div>
+        <button className="bg-blue-600 text-white rounded-full px-6 py-2 hover:bg-blue-700 transition-colors">
+          Join waitlist
+        </button>
       </div>
     </nav>
   )
