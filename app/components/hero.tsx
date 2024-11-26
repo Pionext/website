@@ -12,7 +12,7 @@ export function Hero() {
   return (
     <section className="bg-white relative min-h-screen overflow-hidden">
       {/* First row - scrolling left */}
-      <div className="h-[45vh] flex items-end">
+      <div className="h-[40vh] flex items-end">
         <div className="animate-scroll-left whitespace-nowrap pb-4">
           <div className="inline-flex items-center">
             {/* First set */}
@@ -65,7 +65,7 @@ export function Hero() {
       </div>
 
       {/* Second row - scrolling right */}
-      <div className="h-[45vh] flex items-start">
+      <div className="h-[40vh] flex items-start">
         <div className="animate-scroll-right whitespace-nowrap pt-4">
           <div className="inline-flex items-center">
             {/* First set */}
@@ -118,8 +118,8 @@ export function Hero() {
       </div>
 
       {/* Updated text section */}
-      <div className="absolute bottom-32 left-0 right-0 text-center">
-        <p className={`text-[#0000FF] text-3xl leading-snug max-w-4xl mx-auto font-regular ${crimsonText.className}`}>
+      <div className="absolute bottom-48 left-0 right-0 text-center">
+        <p className={`text-[#0000FF] text-2xl md:text-3xl leading-snug max-w-4xl mx-auto font-regular ${crimsonText.className}`}>
           A community-driven platform for proposing, funding,
           <br />
           and developing projects using a credit-based system with AMMs.
