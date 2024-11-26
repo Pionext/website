@@ -4,11 +4,12 @@ import CommunityDrivenVenturesSvg from '@/public/images/hero/COMMUNITY-DRIVEN_VE
 export function Hero() {
   return (
     <section className="bg-white relative min-h-screen overflow-hidden">
-      <div className="h-screen flex items-center">
-        <div className="animate-scroll-left whitespace-nowrap">
+      {/* First row - scrolling left */}
+      <div className="h-[45vh] flex items-end">
+        <div className="animate-scroll-left whitespace-nowrap pb-4">
           <div className="inline-flex items-center">
             {/* First set */}
-            <div className="inline-flex items-center gap-2 mr-8">
+            <div className="flex items-center gap-4">
               <PioneeringSvg className="h-[15vh] w-auto" />
               
               <div className="h-[15vh] aspect-square rounded-xl overflow-hidden">
@@ -19,16 +20,19 @@ export function Hero() {
                 />
               </div>
 
-            <div className="h-[15vh] aspect-square bg-[#E2FF81] rounded-xl flex flex-col justify-center p-4">
-              <div className="text-black text-[1.5vh]">Current price</div>
-              <div className="text-black text-[3vh] font-medium">$ 23.4</div>
+              <div className="h-[15vh] aspect-square">
+                <img 
+                  src="/images/hero/price.svg" 
+                  alt="Price"
+                  className="h-full w-full"
+                />
+              </div>
+
+              <CommunityDrivenVenturesSvg className="h-[15vh] w-auto mr-16" />
             </div>
 
-              <CommunityDrivenVenturesSvg className="h-[15vh] w-auto" />
-            </div>
-
-            {/* Duplicate set for infinite scroll */}
-            <div className="inline-flex items-center gap-2">
+            {/* Second set */}
+            <div className="flex items-center gap-4">
               <PioneeringSvg className="h-[15vh] w-auto" />
               
               <div className="h-[15vh] aspect-square rounded-xl overflow-hidden">
@@ -39,12 +43,68 @@ export function Hero() {
                 />
               </div>
 
-            <div className="h-[15vh] aspect-square bg-[#E2FF81] rounded-xl flex flex-col justify-center p-4">
-              <div className="text-black text-[1.5vh]">Current price</div>
-              <div className="text-black text-[3vh] font-medium">$ 23.4</div>
+              <div className="h-[15vh] aspect-square">
+                <img 
+                  src="/images/hero/price.svg" 
+                  alt="Price"
+                  className="h-full w-full"
+                />
+              </div>
+
+              <CommunityDrivenVenturesSvg className="h-[15vh] w-auto mr-16" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Second row - scrolling right */}
+      <div className="h-[45vh] flex items-start">
+        <div className="animate-scroll-right whitespace-nowrap pt-4">
+          <div className="inline-flex items-center">
+            {/* First set */}
+            <div className="flex items-center gap-4">
+              <PioneeringSvg className="h-[15vh] w-auto" />
+
+              <div className="h-[15vh] aspect-square">
+                <img 
+                  src="/images/hero/fund_project.svg" 
+                  alt="Fund Project"
+                  className="h-full w-full"
+                />
+              </div>
+
+              <div className="h-[15vh] aspect-square rounded-xl overflow-hidden">
+                <img 
+                  src="/images/hero/card.png" 
+                  alt="Card"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+
+              <CommunityDrivenVenturesSvg className="h-[15vh] w-auto mr-16" />
             </div>
 
-              <CommunityDrivenVenturesSvg className="h-[15vh] w-auto" />
+            {/* Second set */}
+            <div className="flex items-center gap-4">
+              <PioneeringSvg className="h-[15vh] w-auto" />
+              
+              <div className="h-[15vh] aspect-square rounded-xl overflow-hidden">
+                <img 
+                  src="/images/hero/fund_project.png" 
+                  alt="Fund Project"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+
+              <div className="h-[15vh] aspect-square rounded-xl overflow-hidden">
+                <img 
+                  src="/images/hero/card.png" 
+                  alt="Card"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+
+              <CommunityDrivenVenturesSvg className="h-[15vh] w-auto mr-16" />
             </div>
           </div>
         </div>
