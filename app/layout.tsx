@@ -13,7 +13,7 @@ export async function generateMetadata() {
   return {
     metadataBase: new URL('https://pionext.org'),
     title: 'Pionext',
-    description: 'Community-driven venture building',
+    description: 'Pioneering community-driven venture building',
     openGraph: {
       title: 'Pionext',
       description: 'Community-driven venture building',
@@ -33,7 +33,7 @@ export async function generateMetadata() {
     twitter: {
       card: 'summary_large_image',
       title: 'Pionext',
-      description: 'Community-driven venture building',
+      description: 'Pioneering community-driven venture building',
       images: ['/images/og-image.jpg'],
     },
     icons: {
