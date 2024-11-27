@@ -1,6 +1,7 @@
 import './globals.css'
-import { Inter, Crimson_Text } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import { Navigation } from './components/navigation'
+import { Crimson_Text } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 const crimsonText = Crimson_Text({ 
@@ -66,7 +67,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={crimsonText.className}>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />

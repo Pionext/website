@@ -1,11 +1,3 @@
-import { Crimson_Text } from 'next/font/google'
-
-const crimsonText = Crimson_Text({ 
-  weight: ['400', '600'],
-  subsets: ['latin'],
-  display: 'swap',
-})
-
 export function HowItWorks() {
   const steps = [
     {
@@ -30,7 +22,7 @@ export function HowItWorks() {
       <div className="max-w-7xl mx-auto px-8">
         <div className="flex flex-col md:flex-row md:gap-20">
           <div className="bg-[#0000FF] rounded-full px-8 py-3 h-fit mb-12 md:mb-0 self-start">
-            <h2 className={`text-3xl whitespace-nowrap ${crimsonText.className}`}>How it works</h2>
+            <h2 className="text-3xl whitespace-nowrap">How it works</h2>
           </div>
           
           <div className="space-y-8 md:space-y-16">
