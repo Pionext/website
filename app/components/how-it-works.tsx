@@ -10,18 +10,18 @@ export function HowItWorks() {
   const steps = [
     {
       number: "1",
-      title: "Create App Token",
-      description: "Easily make your unique utility token for your project."
+      title: "Submit Your Vision",
+      description: "Builders share their ideas or prototypes and create pre-sale credits for their future product. Early supporters get the best rates through our automated pricing curve."
     },
     {
       number: "2",
-      title: "Initial Token Sale",
-      description: "Fair launch with rising prices. Early supporters get better deals.\nRisk-free: Sell back anytime before funding goal is met."
+      title: "Community Backs Project",
+      description: "Supporters invest by purchasing credits they'll use in the finished product. Thanks to our AMM, credits can be traded anytime - the earlier you join, the better the price."
     },
     {
       number: "3",
       title: "Automatic Exchange Listing",
-      description: "When funded, tokens move to a decentralized exchange.\nTrading starts with our ready-made liquidity pool."
+      description: "Once funding goals are met, builders receive capital to start development. When the product launches, supporters can use their credits to use the product."
     }
   ]
 
@@ -39,7 +39,7 @@ export function HowItWorks() {
                 <div className="bg-[#0000FF] rounded-full w-12 h-12 md:w-16 md:h-16 flex items-center justify-center flex-shrink-0">
                   <span className="text-xl md:text-2xl">{step.number}</span>
                 </div>
-                <div>
+                <div className="max-w-lg">
                   <h3 className="text-base md:text-lg font-medium mb-2">
                     {step.title}
                   </h3>
