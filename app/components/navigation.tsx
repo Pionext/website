@@ -14,9 +14,15 @@ export function Navigation() {
             priority
           />
         </div>
-        <button className="bg-[#0000FF] text-white rounded-full px-6 py-2 hover:bg-blue-700 transition-colors">
-          Join waitlist
-        </button>
+        <a 
+          href="https://forms.gle/Hm1peh3wetLsKg56A"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="bg-[#0000FF] text-white rounded-full px-6 py-2 hover:bg-blue-700 transition-colors">
+            Join waitlist
+          </button>
+        </a>
       </div>
     </nav>
   )
